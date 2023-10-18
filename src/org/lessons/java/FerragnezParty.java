@@ -12,14 +12,26 @@ public class FerragnezParty {
 
         //chiedo all'utente un nome
         System.out.print("Dimmi il tuo Nome: ");
-        int nameToFind = scan.nextInt();
+        String nameToFind = scan.nextLine();
 
         //verifico se quel nome è presente nell'insieme
         //inizializzo una variabile booleana che tiene traccia se ho trovato il numero
         boolean found = false;
 
+        //itero sull'array fino a che non trovo il nome
         for (int i = 0; i < guests.length; i++) {
+            if (nameToFind.equals(guests[i])) {
+                found = true;
+                break;
+            }
+        }
 
+        //se found = true ho trovato il numero
+        if (found) {
+            System.out.println("Nome presente nella lista degli invitati! Puoi entrare :D ");
+        } else {
+            //se found = false non l'ho trovato
+            System.out.println("Nome non presente nella lista degli invitati! Non puoi entrare!");
         }
 
         //chiudere lo scan
