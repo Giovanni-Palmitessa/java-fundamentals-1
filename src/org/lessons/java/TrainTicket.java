@@ -7,7 +7,7 @@ public class TrainTicket {
     public static void main(String[] args) {
         //inizializzare lo scan
         Scanner scan = new Scanner(System.in);
-        DecimalFormat format = new DecimalFormat("#.#0");
+        DecimalFormat format = new DecimalFormat("#.00");
 
         //Chiedere quanti chilometri si vogliono percorrere
         System.out.println("Quanti km vuoi percorrere?");
