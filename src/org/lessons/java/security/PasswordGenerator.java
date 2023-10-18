@@ -22,5 +22,13 @@ public class PasswordGenerator {
         //Chiedere data di nascita
         System.out.println("Qual'è la tua data di nascita (Formato DD-MM-AAAA)?");
         String birthday = scan.nextLine();
+
+        // Analizza la data di nascita per estrarre giorno, mese e anno
+        String[] parts = birthday.split("-");
+        int day = Integer.parseInt(parts[0]);
+        int month = Integer.parseInt(parts[1]);
+        int year = Integer.parseInt(parts[2]);
+
+
     }
 }
