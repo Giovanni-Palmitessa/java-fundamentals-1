@@ -18,12 +18,15 @@ public class TrainTicket {
         int age = scan.nextInt();
 
         //totale del viaggio
-        double total = kmToTravel * 0.21;
+        double ticketPrice = 0.21;
+        double total = kmToTravel * ticketPrice;
         System.out.println("Il totale del viaggio è: " + format.format(total));
 
         //definisco lo sconto
-        double discount20 = total * 0.2;
-        double discount40 = total * 0.4;
+        double discountJunior = 0.2;
+        double discountSenior = 0.4;
+        double discount20 = total * discountJunior;
+        double discount40 = total * discountSenior;
 
         //controllo età
         if (age < 18) {
