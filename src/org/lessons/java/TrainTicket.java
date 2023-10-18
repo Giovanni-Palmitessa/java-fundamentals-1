@@ -35,6 +35,7 @@ public class TrainTicket {
             total = total - discount40;
         }
 
+        // Stampa prezzo biglietto
         System.out.println("Il costo del biglietto è di: " + format.format(total) + " €");
     }
 }
