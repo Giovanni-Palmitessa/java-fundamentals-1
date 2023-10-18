@@ -26,6 +26,21 @@ public class FerragnezParty {
             }
         }
 
+        //PROVA CON CILO WHILE
+        /*
+        int i = 0;
+        // Utilizzo un ciclo while per cercare il nome nell'array
+        while (i < guests.length) {
+            if (nameToFind.equals(guests[i])) {
+                found = true;
+                break;
+            }
+
+            // Incrementiamo l'indice
+            i++;
+        }
+        */
+
         //se found = true ho trovato il numero
         if (found) {
             System.out.println("Nome presente nella lista degli invitati! Puoi entrare :D ");
