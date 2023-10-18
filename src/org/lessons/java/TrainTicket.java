@@ -26,14 +26,12 @@ public class TrainTicket {
         double discount40 = total * 0.4;
 
         //controllo età
-        if(age < 18) {
+        if (age < 18) {
             total = total - discount20;
-            System.out.println("Il costo del biglietto è di: " + format.format(total) + "€");
         } else if (age > 65) {
             total = total - discount40;
-            System.out.println("Il costo del biglietto è di: " + format.format(total) + "€");
-        } else {
-            System.out.println("Il costo del biglietto è di: " + format.format(total) + "€");
         }
+
+        System.out.println("Il costo del biglietto è di: " + format.format(total) + " €");
     }
 }
