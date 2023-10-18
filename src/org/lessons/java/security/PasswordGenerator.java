@@ -29,6 +29,16 @@ public class PasswordGenerator {
         int month = Integer.parseInt(parts[1]);
         int year = Integer.parseInt(parts[2]);
 
+        // Calcola la somma del giorno, del mese e dell'anno di nascita
+        int birthSum = day + month + year;
 
+        // Concatenare tutte le informazioni per generare la password
+        String password = name + "-" + surname + "-" + color + "-" + birthSum;
+
+        // Stampare la password generata
+        System.out.println("La tua password è: " + password);
+
+        //chiudere lo scan
+        scan.close();
     }
 }
