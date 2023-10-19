@@ -30,7 +30,7 @@ public class FerragnezParty {
         /*
         int i = 0;
         // Utilizzo un ciclo while per cercare il nome nell'array
-        while (i < guests.length) {
+        while (!found) {
             if (nameToFind.equals(guests[i])) {
                 found = true;
                 break;
